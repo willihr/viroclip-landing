@@ -1,9 +1,7 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import { Sora } from "@next/font/google";
-import Clarity from "@microsoft/clarity";
 import { GoogleTagManager } from "@next/third-parties/google";
+import ClientLayout from "./ClientLayout";
 
 import "bootstrap/scss/bootstrap.scss";
 
@@ -14,7 +12,7 @@ import "../public/css/plugins/animation.css";
 import "../node_modules/sal.js/dist/sal.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-  import "react-tooltip/dist/react-tooltip.css";
+import "react-tooltip/dist/react-tooltip.css";
 // ========= Plugins CSS END =========
 
 const sora = Sora({
@@ -24,18 +22,28 @@ const sora = Sora({
 
 import "../public/scss/style.scss";
 
+export const metadata = {
+  title: "Transforme Vídeos em Cortes Virais para Redes Sociais | ViroClip",
+  description:
+    "Economize tempo e maximize seu alcance! A IA do ViroClip analisa seus vídeos e cria dezenas de cortes virais, prontos para postar no TikTok, Reels e Shorts. Aumente seu engajamento. Teste grátis!",
+  openGraph: {
+    siteName: "ViroClip",
+    url: "https://viroclip.com",
+    title: "Transforme Vídeos em Cortes Virais para Redes Sociais | ViroClip",
+    description:
+      "Economize tempo e maximize seu alcance! A IA do ViroClip analisa seus vídeos e cria dezenas de cortes virais, prontos para postar no TikTok, Reels e Shorts. Aumente seu engajamento. Teste grátis!",
+    images: [],
+    locale: "pt_BR",
+    type: "website",
+  },
+};
+
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
-
-  Clarity.init("t8cn2gjcvf");
-
   return (
     <html lang="en">
       <GoogleTagManager gtmId="GTM-W68LHCNX" />
       <body className={sora.className} suppressHydrationWarning={true}>
-        {children}
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
