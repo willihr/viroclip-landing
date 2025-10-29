@@ -103,32 +103,45 @@ const Home = () => {
                   em minutos
                 </h1>
                 <p className="description !text-[16px] md:!text-[20px] opacity-80">
-                  O ViroClip entende seu conteúdo, gera cortes prontos para viralizar e os publica em todas as suas redes sociais com poucos cliques.
+                  O ViroClip entende seu conteúdo, gera cortes prontos para
+                  viralizar e os publica em todas as suas redes sociais com
+                  poucos cliques.
                 </p>
 
                 <div className="flex items-center gap-x-4 gap-y-3 w-auto flex-col md:flex-row">
                   <div className="flex-grow bg-[#2D313E] rounded-full p-2 flex items-center shadow-lg max-w-[430px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-gray-400 mx-3 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-8 w-8 text-gray-400 mx-3 flex-none"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                      />
                     </svg>
-                    <input 
-                      type="text" 
-                      placeholder="Cole um link aqui" 
+                    <input
+                      type="text"
+                      placeholder="Cole um link aqui"
                       value={inputUrl}
                       onChange={(e) => setInputUrl(e.target.value)}
-                      className="w-full !pl-0 !rounded-none bg-transparent text-gray-700 placeholder-gray-500 text-base !border-none focus:ring-0 outline-none" 
+                      className="w-full !pl-0 !rounded-none bg-transparent text-gray-700 placeholder-gray-500 text-base !border-none focus:ring-0 outline-none"
                     />
-                    <Link 
-                      className="btn-default flex-none !rounded-full" 
-                      href={`/signup${inputUrl ? `?url=${encodeURIComponent(inputUrl)}` : ''}`}
+                    <Link
+                      className="btn-default flex-none !rounded-full"
+                      href="https://app.viroclip.com/signup"
                     >
                       Obter cortes grátis
                     </Link>
                   </div>
                   <span className="text-gray-300 text-[14px]">ou</span>
-                  <Link 
-                    className="rainbow-gradient-btn without-shape-circle flex-none" 
-                    href={`/signup${inputUrl ? `?url=${encodeURIComponent(inputUrl)}` : ''}`}
+                  <Link
+                    className="rainbow-gradient-btn without-shape-circle flex-none"
+                    href="https://app.viroclip.com/signup"
                   >
                     <span>Carregar arquivo</span>
                   </Link>
@@ -167,7 +180,13 @@ const Home = () => {
             </div>
             <div className="col-lg-9 col-xl-9 justify-content-center">
               <div className="slider-frame !bg-cover before:!bg-cover max-md:!p-0">
-                <video className="w-full" src="/hero-banner-video.webm" autoPlay muted loop />
+                <video
+                  className="w-full"
+                  src="/hero-banner-video.webm"
+                  autoPlay
+                  muted
+                  loop
+                />
               </div>
             </div>
           </div>
@@ -202,7 +221,8 @@ const Home = () => {
                 data-sal-delay="100"
               >
                 <p className="b1 mb--0 small-title">
-                  A ferramenta que acelera o crescimento de milhares de criadores
+                  A ferramenta que acelera o crescimento de milhares de
+                  criadores
                 </p>
               </div>
             </div>
@@ -285,14 +305,16 @@ const Home = () => {
                 data-sal-delay="100"
               >
                 <h4 className="subtitle ">
-                  <span className="theme-gradient">Sua Máquina de Conteúdo Viral</span>
+                  <span className="theme-gradient">
+                    Sua Máquina de Conteúdo Viral
+                  </span>
                 </h4>
                 <h2 className="title mb--20">
                   Um vídeo rende um mês inteiro de cortes virais
                 </h2>
                 <Link
                   className="btn-default btn-large"
-                  href="/signup"
+                  href="https://app.viroclip.com/signup"
                 >
                   Teste Grátis Agora{" "}
                   <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>

@@ -32,7 +32,8 @@ const CtaOne = () => {
                 data-sal-duration="400"
                 data-sal-delay="300"
               >
-                Milhares de criadores já economizam horas de trabalho e alcançam mais pessoas. Chegou a sua vez de criar mais, com menos esforço.
+                Milhares de criadores já economizam horas de trabalho e alcançam
+                mais pessoas. Chegou a sua vez de criar mais, com menos esforço.
               </p>
             </div>
           </div>
@@ -53,7 +54,10 @@ const CtaOne = () => {
                   alt="Group Image"
                 />
               </div>
-              <Link className="btn-default whitespace-nowrap" href="/signup">
+              <Link
+                className="btn-default whitespace-nowrap"
+                href="https://app.viroclip.com/signup"
+              >
                 Multiplicar meu Conteúdo
               </Link>
             </div>

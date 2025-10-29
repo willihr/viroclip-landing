@@ -61,8 +61,13 @@ const Header = ({ headerTransparent, headerSticky, btnClass }) => {
             <div className="col-lg-2 col-md-6 col-6 position-static">
               <div className="header-right">
                 <div className="header-btn !block">
-                  <Link className={`${btnClass}`} href="/signup">
-                    <span className="whitespace-nowrap max-md:!px-5">Comece Grátis</span>
+                  <Link
+                    className={`${btnClass}`}
+                    href="https://app.viroclip.com/signup"
+                  >
+                    <span className="whitespace-nowrap max-md:!px-5">
+                      Comece Grátis
+                    </span>
                   </Link>
                 </div>
 
