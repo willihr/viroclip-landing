@@ -1,22 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import PricingData from "../../data/pricing.json";
 
 const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
-  const [sectionStates, setSectionStates] = useState({
-    Premium: true,
-    Enterprise: true,
-  });
-
-  const toggleSection = (subTitle) => {
-    setSectionStates((prevState) => ({
-      ...prevState,
-      [subTitle]: !prevState[subTitle],
-    }));
-  };
-
   return (
     <>
       <div
@@ -64,13 +52,7 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
                               </div>
                             </div>
                             <div className="pricing-body">
-                              <div
-                                className={`features-section has-show-more ${
-                                  !sectionStates[innerData.subTitle]
-                                    ? "active"
-                                    : ""
-                                }`}
-                              >
+                              <div className="features-section">
                                 <h6>{innerData.text}</h6>
                                 <ul className="list-style--1 has-show-more-inner-content">
                                   {innerData.listItem.map((list, i) => (
@@ -80,22 +62,6 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
                                     </li>
                                   ))}
                                 </ul>
-                                {innerData.isShow ? (
-                                  <div
-                                    className={`rbt-show-more-btn ${
-                                      !sectionStates[innerData.subTitle]
-                                        ? "active"
-                                        : ""
-                                    }`}
-                                    onClick={() =>
-                                      toggleSection(innerData.subTitle)
-                                    }
-                                  >
-                                    Show More
-                                  </div>
-                                ) : (
-                                  ""
-                                )}
                               </div>
                             </div>
                           </div>
