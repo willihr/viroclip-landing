@@ -3,6 +3,7 @@
 import React from "react";
 
 import PricingData from "../../data/pricing.json";
+import Link from "next/link";
 
 const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
   return (
@@ -66,21 +67,19 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
                             </div>
                           </div>
                           <div className="pricing-footer">
-                            <a
+                            <Link
                               className={`btn-default ${
-                                innerData.isSelect
-                                  ? "color-blacked"
-                                  : "btn-border"
+                                innerData.isSelect ? "" : "btn-border"
                               }`}
-                              href="#"
+                              href="https://app.viroclip.com/signup"
                             >
-                              Get Started
-                            </a>
+                              Começar Agora
+                            </Link>
                             <p className="bottom-text">{innerData.limited}</p>
                           </div>
                         </div>
                         {innerData.isSelect && isBadge ? (
-                          <div className="feature-badge">Best Offer</div>
+                          <div className="feature-badge">Mais Popular</div>
                         ) : (
                           ""
                         )}

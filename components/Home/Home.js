@@ -342,13 +342,13 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="rainbow-rn-cta rainbow-section-gapBottom-big">
+      <div className="rainbow-rn-cta">
         <div className="container">
           <CtaOne />
         </div>
       </div>
 
-      {/* <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
+      <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -359,14 +359,16 @@ const Home = () => {
                 data-sal-delay="150"
               >
                 <h4 className="subtitle">
-                  <span className="theme-gradient">Pricing</span>
+                  <span className="theme-gradient">
+                    Acelere seu crescimento
+                  </span>
                 </h4>
-                <h2 className="title w-600 mb--40">
-                  Pricing plans for everyone
+                <h2 className="title !font-semibold mb--40">
+                  Escolha seu plano
                 </h2>
               </div>
 
-              <nav className="aiwave-tab">
+              {/* <nav className="aiwave-tab">
                 <div
                   className="tab-btn-grp nav nav-tabs text-center justify-content-center"
                   id="nav-tab"
@@ -396,7 +398,7 @@ const Home = () => {
                       </button>
                     ))}
                 </div>
-              </nav>
+              </nav> */}
             </div>
           </div>
 
@@ -408,7 +410,7 @@ const Home = () => {
             gap="mt_dec--40"
           />
         </div>
-      </div> */}
+      </div>
 
       {/* <div className="aiwave-service-area rainbow-section-gap">
         <div className="container">

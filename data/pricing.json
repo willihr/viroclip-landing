@@ -4,36 +4,39 @@
       "priceId": "nav-home",
       "priceType": "Monthly",
       "discount": "",
-      "isSelect": false,
+      "isSelect": true,
       "priceBody": [
         {
           "id": 1,
           "priceId": "nav-home",
           "isSelect": false,
           "isShow": false,
-          "classNum": "one",
-          "subTitle": "Basic",
-          "title": "For large teams & corportaions",
-          "price": "Free",
-          "priceFor": "/Per Month",
-          "limited": "Limited Offer",
-          "text": "Features",
-          "iconClass": "fa-regular fa-circle-radiation",
+          "classNum": "two",
+          "subTitle": "Gratuito",
+          "title": "O essencial para transformar vídeos longos em cortes",
+          "price": "R$0",
+          "priceFor": "",
+          "limited": "",
+          "text": "Inclui:",
+          "iconClass": "fa-regular fa-seedling",
           "listItem": [
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "30 créditos por mês (30 minutos)"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Cortes automáticos com IA"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Legendas animadas"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Acesso ao editor de vídeo"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Exportação em 720p"
+            },
+            {
+              "text": "Armazenamento de cortes por 7 dias"
             }
           ]
         },
@@ -42,38 +45,38 @@
           "priceId": "nav-home",
           "isSelect": true,
           "isShow": true,
-          "classNum": "two",
-          "subTitle": "Premium",
-          "title": "For large teams & corportaions",
-          "price": "$60.50",
-          "priceFor": "/Per Month",
-          "limited": "Limited Offer",
-          "text": "Features",
-          "iconClass": "fa-sharp fa-regular fa-flower",
+          "classNum": "three",
+          "subTitle": "Viral",
+          "title": "O pacote completo para crescer rápido e dominar as redes sociais",
+          "price": "R$49",
+          "priceFor": "/por mês",
+          "limited": "",
+          "text": "Inclui:",
+          "iconClass": "fa-sharp fa-regular fa-rocket",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "300 créditos por mês (5 horas)"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Tudo do Plano Gratuito"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Conexão com 3 contas sociais"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Agendamento de postagens sociais"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Exportações ilimitadas em 1080p"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Armazenamento de cortes por 30 dias"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
+              "text": "Exportações sem marca d'água"
             },
             {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Suporte via WhatsApp"
             }
           ]
         },
@@ -82,38 +85,35 @@
           "priceId": "nav-home",
           "isSelect": false,
           "isShow": true,
-          "classNum": "three",
-          "subTitle": "Enterprise",
-          "title": "For large teams & corportaions",
-          "price": "$80.50",
-          "priceFor": "/Per Month",
-          "limited": "Limited Offer",
-          "text": "Features",
-          "iconClass": "fa-sharp fa-regular fa-waveform-lines",
+          "classNum": "one",
+          "subTitle": "Empresa",
+          "title": "Para agências, marcas e criadores de alto volume",
+          "price": "‎",
+          "priceFor": "Entre em contato conosco",
+          "limited": "",
+          "text": "Inclui:",
+          "iconClass": "fa-sharp fa-regular fa-users",
           "listItem": [
             {
-              "text": "12,700 7-9 day turnarouord"
+              "text": "Créditos e conexões sob medida"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Tudo do Plano Viral"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Espaço de trabalho para equipes"
             },
             {
-              "text": "7,700 3-5 day turnarouord"
+              "text": "Processamento prioritário"
             },
             {
-              "text": "6+ Naive development"
+              "text": "Acesso à API e integrações"
             },
             {
-              "text": "5+ Task delivered one-by-one"
+              "text": "Armazenamento de cortes permanente"
             },
             {
-              "text": "AI Blog Updates via dashboard & slack"
-            },
-            {
-              "text": "Advance Updates via dashboard & slack"
+              "text": "Suporte prioritário"
             }
           ]
         }
@@ -123,7 +123,7 @@
       "priceId": "nav-profile",
       "priceType": "Yearly",
       "discount": 10,
-      "isSelect": true,
+      "isSelect": false,
       "priceBody": [
         {
           "id": 1,
