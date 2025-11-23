@@ -1,6 +1,7 @@
 import React from "react";
 import { Sora } from "@next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { MetaPixel } from "./tracking";
 import ClientLayout from "./ClientLayout";
 
 import "bootstrap/scss/bootstrap.scss";
@@ -16,9 +17,9 @@ import "react-tooltip/dist/react-tooltip.css";
 // ========= Plugins CSS END =========
 
 const sora = Sora({
-  subsets:['latin'],
-  weight:['100','200','300','400','500','600','700','800'],
-})
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
 
 import "../public/scss/style.scss";
 
@@ -41,7 +42,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="GTM-W68LHCNX" />
+      <head>
+        <GoogleTagManager gtmId="GTM-W68LHCNX" />
+        <MetaPixel />
+      </head>
       <body className={sora.className} suppressHydrationWarning={true}>
         <ClientLayout>{children}</ClientLayout>
       </body>
