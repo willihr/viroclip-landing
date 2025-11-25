@@ -91,6 +91,11 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
               </div>
             </div>
           ))}
+        <div className="text-center mt-5">
+          <p style={{ fontSize: "14px" }}>
+            * 1 crédito = 1 minuto de vídeo processado
+          </p>
+        </div>
       </div>
     </>
   );

@@ -21,7 +21,7 @@
           "iconClass": "fa-regular fa-seedling",
           "listItem": [
             {
-              "text": "30 créditos por mês (30 minutos)"
+              "text": "30 créditos por mês*"
             },
             {
               "text": "Cortes automáticos com IA"
@@ -30,13 +30,13 @@
               "text": "Legendas animadas"
             },
             {
+              "text": "Cortes renderizados em 720p"
+            },
+            {
               "text": "Acesso ao editor de vídeo"
             },
             {
-              "text": "Exportação em 720p"
-            },
-            {
-              "text": "Armazenamento de cortes por 7 dias"
+              "text": "Armazenamento de 7 dias"
             }
           ]
         },
@@ -55,25 +55,28 @@
           "iconClass": "fa-sharp fa-regular fa-rocket",
           "listItem": [
             {
-              "text": "300 créditos por mês (5 horas)"
+              "text": "300 créditos por mês*"
             },
             {
               "text": "Tudo do Plano Gratuito"
             },
             {
-              "text": "Conexão com 3 contas sociais"
+              "text": "Remover marca d'água"
             },
             {
-              "text": "Agendamento de postagens sociais"
+              "text": "Cortes renderizados em 1080p"
             },
             {
-              "text": "Exportações ilimitadas em 1080p"
+              "text": "Acesso completo ao editor de vídeo"
             },
             {
-              "text": "Armazenamento de cortes por 30 dias"
+              "text": "Integração com 3 redes sociais"
             },
             {
-              "text": "Exportações sem marca d'água"
+              "text": "Agendamento automático de posts"
+            },
+            {
+              "text": "Armazenamento de 30 dias"
             },
             {
               "text": "Suporte via WhatsApp"
@@ -95,7 +98,7 @@
           "iconClass": "fa-sharp fa-regular fa-users",
           "listItem": [
             {
-              "text": "Créditos e conexões sob medida"
+              "text": "Créditos e integrações sob medida"
             },
             {
               "text": "Tudo do Plano Viral"
@@ -110,7 +113,7 @@
               "text": "Acesso à API e integrações"
             },
             {
-              "text": "Armazenamento de cortes permanente"
+              "text": "Armazenamento permanente"
             },
             {
               "text": "Suporte prioritário"
