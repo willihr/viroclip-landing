@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import BackToTop from "../backToTop";
 import SigninPage from "./index";
 
@@ -8,6 +9,8 @@ export const metadata = {
 };
 
 const SigninLayout = () => {
+  redirect("https://app.viroclip.com/login");
+
   return (
     <>
       <SigninPage />
