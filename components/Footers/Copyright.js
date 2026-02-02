@@ -25,13 +25,8 @@ const Copyright = () => {
             <div className="col-12">
               <div className="copyright-right text-center text-lg-end">
                 <p className="copyright-text text-center">
-                  Copyright © 2025{" "}
-                  <Link
-                    href="https://viroclip.com"
-                    className="btn-read-more"
-                  >
-                    <span>ViroClip.</span>
-                  </Link>
+                  ViroClip © {new Date().getFullYear()} - Willian Henrique
+                  Ribeiro - CNPJ: 52.719.316/0001-31
                 </p>
               </div>
             </div>
