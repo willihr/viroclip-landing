@@ -37,11 +37,7 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
                               <div className="icon">
                                 <i className={innerData.iconClass}></i>
                               </div>
-                              <h4
-                                className={`title color-var-${innerData.classNum}`}
-                              >
-                                {innerData.subTitle}
-                              </h4>
+                              <h4 className="title">{innerData.subTitle}</h4>
                               <p className="subtitle">{innerData.title}</p>
                               <div className="pricing">
                                 <span className="price-text">
