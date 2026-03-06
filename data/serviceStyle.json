@@ -2,50 +2,50 @@
   "serviceOne": [
     {
       "img": "/images/icons/service-icon-01.svg",
-      "title": "Ask anything",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Cole qualquer link",
+      "desc": "YouTube, Twitch, Vimeo ou upload direto. A IA processa e gera os melhores cortes automaticamente."
+    },
+    {
+      "img": "/images/icons/video-g.png",
+      "title": "Cortes em segundos",
+      "desc": "Nossa IA analisa o vídeo e identifica os momentos com maior potencial viral em menos de 5 minutos."
     },
     {
       "img": "/images/icons/service-icon-02.svg",
-      "title": "Connect everywhere",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Publique em todas as redes",
+      "desc": "Compartilhe no TikTok, Reels, YouTube Shorts e LinkedIn com um único clique, sem sair da plataforma."
     },
     {
       "img": "/images/icons/service-icon-03.svg",
-      "title": "Fast responding",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Legendas automáticas",
+      "desc": "Geração de legendas em mais de 30 idiomas com estilos animados que aumentam o engajamento dos vídeos."
+    },
+    {
+      "img": "/images/icons/service-icon-04.svg",
+      "title": "Branding personalizado",
+      "desc": "Adicione sua marca, logo e cores a todos os cortes. Mantenha identidade visual em todas as plataformas."
     },
     {
       "img": "/images/icons/service-icon-01.svg",
-      "title": "Ask anything",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
-    },
-    {
-      "img": "/images/icons/service-icon-02.svg",
-      "title": "Connect everywhere",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
-    },
-    {
-      "img": "/images/icons/service-icon-03.svg",
-      "title": "Fast responding",
-      "desc": "Lets users quickly find answers to their questions without having to search through multiple sources."
+      "title": "Analytics avançado",
+      "desc": "Monitore o desempenho dos seus clips e descubra quais tipos de conteúdo geram mais engajamento."
     }
   ],
   "serviceTwo": [
     {
       "img": "/images/service/service-icon-01.png",
-      "title": "100% No-Risk, Money Back Guarantee!",
-      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+      "title": "Garantia de 7 dias sem risco",
+      "desc": "Não ficou satisfeito? Devolvemos 100% do valor em até 7 dias após a assinatura, sem burocracia."
     },
     {
       "img": "/images/service/service-icon-02.png",
-      "title": "Upgrade or Cancel Anytime",
-      "desc": "Passages there are many variations variations of of Lorem Ipsum available"
+      "title": "Cancele quando quiser",
+      "desc": "Sem fidelidade, sem multa. Faça upgrade, downgrade ou cancele diretamente no painel a qualquer momento."
     },
     {
       "img": "/images/service/service-icon-03.png",
-      "title": "Not sure yet, try the free version",
-      "desc": "Refunds will be issued within period of 14 days from the purchase date"
+      "title": "Comece grátis agora",
+      "desc": "Teste com 30 créditos mensais gratuitos, sem necessidade de cartão de crédito. Sinta o poder do ViroClip."
     }
   ]
 }

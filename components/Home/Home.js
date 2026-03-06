@@ -18,17 +18,15 @@ import bgShapeOne from "../../public/images/bg/bg-shape-four.png";
 import bgShapeTwo from "../../public/images/bg/bg-shape-five.png";
 import bgShapeThree from "../../public/images/bg/bg-shape-two.png";
 
-import BrandList from "../Brands/BrandList";
-import TabStyleOne from "../TabStyles/TabStyle-One";
-import ServiceStyleOne from "../Services/ServiceStyle-One";
-import AdvanceTab from "../TabStyles/AdvanceTab";
 import CtaOne from "../CallToActions/Cta-One";
 import Pricing from "../Pricing/Pricing";
 import ServiceTwo from "../Services/Service-Two";
 import Testimonial from "../Testimonials/Testimonial";
-import BrandTwo from "../Brands/Brand-Two";
-import CtaTwo from "../CallToActions/Cta-Two";
 import SquareLogo from "./SquareLogo";
+import Stats from "./Stats";
+import HowItWorks from "./HowItWorks";
+import Features from "./Features";
+import Faq from "./Faq";
 
 const Home = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
@@ -48,6 +46,7 @@ const Home = () => {
 
   return (
     <>
+      {/* ─── HERO ─── */}
       <div
         className="slider-area slider-style-1 variation-default slider-bg-image bg-banner1 slider-bg-shape"
         data-black-overlay="1"
@@ -210,6 +209,7 @@ const Home = () => {
         </div>
       </div>
 
+      {/* ─── SOCIAL PROOF BAR ─── */}
       <div className="rainbow-brand-area rainbow-section-gap">
         <div className="container">
           <div className="row">
@@ -227,73 +227,16 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <div className="row">
-            <div className="col-lg-12 mt--10">
-              <BrandList />
-            </div>
-          </div> */}
         </div>
       </div>
 
-      {/* <div className="rainbow-service-area rainbow-section-gap">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                className="section-title text-center pb--60"
-                data-sal="slide-up"
-                data-sal-duration="700"
-                data-sal-delay="100"
-              >
-                <h4 className="subtitle">
-                  <span className="theme-gradient">
-                    RAINBOW UNLOCKS THE POTENTIAL ai
-                  </span>
-                </h4>
-                <h2 className="title mb--0">
-                  Generative AI made for <br /> creators.
-                </h2>
-              </div>
-            </div>
-          </div>
-          <TabStyleOne />
-        </div>
-      </div> */}
+      {/* ─── STATS ─── */}
+      <Stats />
 
-      {/* <div className="rainbow-service-area rainbow-section-gap rainbow-section-gapBottom-big">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                className="section-title text-left"
-                data-sal="slide-up"
-                data-sal-duration="400"
-                data-sal-delay="150"
-              >
-                <h4 className="subtitle">
-                  <span className="theme-gradient">Assisting individuals</span>
-                </h4>
-                <h2 className="title mb--60">
-                  Chat Smarter, Not <br /> Harder with
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ServiceStyleOne />
-      </div> */}
+      {/* ─── HOW IT WORKS ─── */}
+      <HowItWorks />
 
-      {/* <div className="rainbow-advance-tab-area aiwave-bg-gradient rainbow-section-gap-big">
-        <div className="container">
-          <div className="html-tabs" data-tabs="true">
-            <AdvanceTab />
-          </div>
-        </div>
-        <div className="bg-shape">
-          <Image src={bgShape} width={630} height={879} alt="Bg Shape" />
-        </div>
-      </div> */}
-
+      {/* ─── COLLABORATION / DEMO VISUAL ─── */}
       <div className="rainbow-collobration-area rainbow-section-gap-big">
         <div className="container">
           <div className="row">
@@ -342,12 +285,50 @@ const Home = () => {
         </div>
       </div>
 
+      {/* ─── FEATURES ─── */}
+      <Features />
+
+      {/* ─── CTA BANNER ─── */}
       <div className="rainbow-rn-cta">
         <div className="container">
           <CtaOne />
         </div>
       </div>
 
+      {/* ─── TESTIMONIALS ─── */}
+      <div className="rainbow-testimonial-area rainbow-section-gap">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div
+                className="section-title text-center"
+                data-sal="slide-up"
+                data-sal-duration="400"
+                data-sal-delay="150"
+              >
+                <h4 className="subtitle">
+                  <span className="theme-gradient">Quem já usa o ViroClip</span>
+                </h4>
+                <h2 className="title mb--60">
+                  Criadores reais, resultados reais
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Testimonial />
+      </div>
+
+      {/* ─── TRUST ICONS (SERVICE TWO) ─── */}
+      <div className="aiwave-service-area rainbow-section-gap">
+        <div className="container">
+          <div className="row row--15 service-wrapper">
+            <ServiceTwo />
+          </div>
+        </div>
+      </div>
+
+      {/* ─── PRICING ─── */}
       <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
         <div className="container">
           <div className="row">
@@ -367,38 +348,6 @@ const Home = () => {
                   Escolha seu plano
                 </h2>
               </div>
-
-              {/* <nav className="aiwave-tab">
-                <div
-                  className="tab-btn-grp nav nav-tabs text-center justify-content-center"
-                  id="nav-tab"
-                  role="tablist"
-                >
-                  {PricingData &&
-                    PricingData.pricing.map((data, index) => (
-                      <button
-                        className={`nav-link ${data.isSelect ? "active" : ""}`}
-                        id={`${data.priceId}-tab`}
-                        data-bs-toggle="tab"
-                        data-bs-target={`#${data.priceId}`}
-                        type="button"
-                        role="tab"
-                        aria-controls={data.priceId}
-                        aria-selected="false"
-                        key={index}
-                      >
-                        {data.priceType}{" "}
-                        {data.discount ? (
-                          <span className="rainbow-badge-card badge-border">
-                            -{data.discount}%
-                          </span>
-                        ) : (
-                          ""
-                        )}
-                      </button>
-                    ))}
-                </div>
-              </nav> */}
             </div>
           </div>
 
@@ -412,83 +361,73 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="aiwave-service-area rainbow-section-gap">
-        <div className="container">
-          <div className="row row--15 service-wrapper">
-            <ServiceTwo />
-          </div>
-        </div>
-      </div> */}
+      {/* ─── FAQ ─── */}
+      <Faq />
 
-      {/* <div className="rainbow-testimonial-area rainbow-section-gap">
+      {/* ─── FINAL CTA ─── */}
+      <div className="rainbow-section-gap-big">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div
-                className="section-title text-left"
-                data-sal="slide-up"
-                data-sal-duration="400"
-                data-sal-delay="150"
-              >
-                <h4 className="subtitle">
-                  <span className="theme-gradient">Assisting individuals</span>
-                </h4>
-                <h2 className="title mb--60">The opinions of the community</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Testimonial />
-      </div> */}
-
-      {/* <div className="rainbow-brand-area rainbow-section-gap">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                className="section-title rating-title text-center sal-animate"
+                className="rounded-2xl p-8 md:p-16 text-center relative overflow-hidden sal-animate"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(99,102,241,0.15) 0%, rgba(168,85,247,0.15) 100%)",
+                  border: "1px solid rgba(99,102,241,0.3)",
+                }}
                 data-sal="slide-up"
                 data-sal-duration="700"
                 data-sal-delay="100"
               >
-                <div className="rating">
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
+                {/* Background glow */}
+                <div
+                  className="absolute inset-0 opacity-30"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at center, rgba(99,102,241,0.3) 0%, transparent 70%)",
+                  }}
+                ></div>
+
+                <div className="relative z-10">
+                  <span className="inline-block text-sm font-semibold px-4 py-2 rounded-full bg-[rgba(99,102,241,0.2)] text-[#a78bfa] mb-6 border border-[rgba(99,102,241,0.3)]">
+                    🚀 Comece hoje mesmo — é grátis
+                  </span>
+                  <h2 className="title !text-3xl md:!text-5xl !font-bold !mb-4 !leading-tight">
+                    Pare de desperdiçar conteúdo.
+                    <br />
+                    <span className="theme-gradient">
+                      Comece a viralizar agora.
+                    </span>
+                  </h2>
+                  <p className="description b1 !max-w-[520px] mx-auto !mb-8 opacity-80">
+                    Junte-se a mais de 10.000 criadores que já transformam cada
+                    vídeo em dezenas de cortes virais com o ViroClip.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <Link
+                      className="btn-default btn-large !px-10"
+                      href="https://app.viroclip.com/signup"
+                    >
+                      Criar conta grátis{" "}
+                      <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
+                    </Link>
+                    <Link
+                      className="btn-default btn-border btn-large !px-10"
+                      href="/pricing"
+                    >
+                      Ver planos e preços
+                    </Link>
+                  </div>
+                  <p className="!text-sm !mt-4 text-gray-400">
+                    Sem cartão de crédito · Cancele quando quiser · 30 créditos grátis
+                  </p>
                 </div>
-                <p className="subtitle mb--0">Based on 20,000+ reviews on</p>
               </div>
             </div>
           </div>
-          <BrandTwo />
-          <div className="bg-shape-left">
-            <Image
-              src={bgShapeThree}
-              width={688}
-              height={1055}
-              alt="Bg shape"
-            />
-          </div>
         </div>
-      </div> */}
-
-      {/* <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
-        <div className="container">
-          <CtaTwo />
-        </div>
-      </div> */}
+      </div>
     </>
   );
 };
