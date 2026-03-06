@@ -22,7 +22,7 @@ const HomePage = () => {
           {/* <PopupMobileMenu /> */}
 
           <Home />
-          {/* <Footer /> */}
+          <Footer />
           <Copyright />
         </Context>
       </main>
