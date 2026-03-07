@@ -101,7 +101,7 @@ const PricingPage = () => {
                   </div>
 
                   <Pricing
-                    parentClass="col-xl-4 col-lg-6 col-md-6 col-12 mt--30"
+                    parentClass="xl:w-1/3 lg:w-1/2 md:w-1/2 w-full px-[15px] mt-[30px]"
                     start={0}
                     end={3}
                     isHeading={false}

@@ -14,8 +14,8 @@ const CtaOne = () => {
   }, []);
   return (
     <>
-      <div className="row row--0 align-items-center content-wrapper">
-        <div className="col-lg-8">
+      <div className="flex flex-wrap items-center content-wrapper">
+        <div className="w-full lg:w-2/3">
           <div className="inner">
             <div className="content text-left">
               <h4
@@ -38,10 +38,10 @@ const CtaOne = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-4">
+        <div className="w-full lg:w-1/3">
           <div className="right-content text-center lg:text-right">
             <div
-              className="call-to-btn text-start text-lg-end sal-animate"
+              className="call-to-btn text-left lg:text-right sal-animate"
               data-sal="slide-up"
               data-sal-duration="400"
               data-sal-delay="400"
