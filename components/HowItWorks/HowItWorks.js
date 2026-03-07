@@ -62,16 +62,16 @@ const HowItWorks = () => {
               data-sal-delay={100 + index * 150}
             >
               <div className="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped">
-                <div className="inner p-5">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-[#805AF5] to-[#CD99FF]">
-                      <i className={`${step.icon} text-white text-xl`}></i>
+                <div className="inner tw:p-5">
+                  <div className="tw:flex tw:items-center tw:gap-4 tw:mb-4">
+                    <div className="tw:flex tw:items-center tw:justify-center tw:w-14 tw:h-14 tw:rounded-full tw:bg-gradient-to-r tw:from-[#805AF5] tw:to-[#CD99FF]">
+                      <i className={`${step.icon} tw:text-white tw:text-xl`}></i>
                     </div>
-                    <span className="text-[40px] font-bold opacity-20">
+                    <span className="tw:text-[40px] tw:font-bold tw:opacity-20">
                       {step.number}
                     </span>
                   </div>
-                  <h4 className="title mb-3">{step.title}</h4>
+                  <h4 className="title tw:mb-3">{step.title}</h4>
                   <p className="description">{step.description}</p>
                 </div>
               </div>

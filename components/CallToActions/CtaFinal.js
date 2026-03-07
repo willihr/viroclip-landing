@@ -20,19 +20,19 @@ const CtaFinal = () => {
               data-sal-duration="700"
               data-sal-delay="100"
             >
-              <h4 className="subtitle mb-3">
+              <h4 className="subtitle tw:mb-3">
                 <span className="theme-gradient">
                   Pronto para viralizar?
                 </span>
               </h4>
-              <h2 className="title mb-4">
+              <h2 className="title tw:mb-4">
                 Comece a criar cortes virais <br /> agora mesmo — é grátis
               </h2>
-              <p className="description mb-5 opacity-80">
+              <p className="description tw:mb-5 tw:opacity-80">
                 Sem cartão de crédito. Sem compromisso. Teste o ViroClip
                 gratuitamente e descubra como multiplicar seu conteúdo com IA.
               </p>
-              <div className="flex items-center justify-center gap-4 flex-wrap">
+              <div className="tw:flex tw:items-center tw:justify-center tw:gap-4 tw:flex-wrap">
                 <Link
                   className="btn-default btn-large"
                   href="https://app.viroclip.com/signup"

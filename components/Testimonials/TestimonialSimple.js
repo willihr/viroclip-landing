@@ -58,23 +58,23 @@ const TestimonialSimple = () => {
               data-sal-duration="700"
               data-sal-delay={100 + index * 150}
             >
-              <div className="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped h-full">
-                <div className="inner p-5">
-                  <div className="rating mb-3">
+              <div className="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped tw:h-full">
+                <div className="inner tw:p-5">
+                  <div className="rating tw:mb-3">
                     {Array.from({ length: item.rating }).map((_, i) => (
-                      <span key={i} className="text-yellow-400 mr-1">
+                      <span key={i} className="tw:text-yellow-400 tw:mr-1">
                         <i className="fa-sharp fa-solid fa-star"></i>
                       </span>
                     ))}
                   </div>
-                  <p className="description mb-4">
+                  <p className="description tw:mb-4">
                     &ldquo;{item.text}&rdquo;
                   </p>
-                  <div className="border-t border-white/10 pt-4">
-                    <p className="title-text mb-0 font-semibold">
+                  <div className="tw:border-t tw:border-white/10 tw:pt-4">
+                    <p className="title-text tw:mb-0 tw:font-semibold">
                       {item.name}
                     </p>
-                    <p className="desc mb-0 opacity-60">{item.role}</p>
+                    <p className="desc tw:mb-0 tw:opacity-60">{item.role}</p>
                   </div>
                 </div>
               </div>

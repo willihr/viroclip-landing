@@ -76,15 +76,15 @@ const Features = () => {
               data-sal-duration="700"
               data-sal-delay={100 + index * 100}
             >
-              <div className="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped h-full">
-                <div className="inner p-5">
-                  <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-r from-[#805AF5]/20 to-[#CD99FF]/20 mb-4">
+              <div className="rainbow-box-card card-style-default testimonial-style-defalt has-bg-shaped tw:h-full">
+                <div className="inner tw:p-5">
+                  <div className="tw:flex tw:items-center tw:justify-center tw:w-12 tw:h-12 tw:rounded-lg tw:bg-gradient-to-r tw:from-[#805AF5]/20 tw:to-[#CD99FF]/20 tw:mb-4">
                     <i
-                      className={`${feature.icon} text-xl theme-gradient`}
+                      className={`${feature.icon} tw:text-xl theme-gradient`}
                     ></i>
                   </div>
-                  <h5 className="title mb-3">{feature.title}</h5>
-                  <p className="description mb-0">{feature.description}</p>
+                  <h5 className="title tw:mb-3">{feature.title}</h5>
+                  <p className="description tw:mb-0">{feature.description}</p>
                 </div>
               </div>
             </div>

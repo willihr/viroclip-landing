@@ -62,16 +62,16 @@ const Home = () => {
           <div className="row justify-content-center">
             <div className="col-lg-12">
               <div className="inner text-center mt--140">
-                <h1 className="title display-one !text-[36px] md:!text-[44px] lg:!text-[48px] xl:!text-[56px] 2xl:!text-[64px] !leading-none">
+                <h1 className="title display-one tw:!text-[36px] md:tw:!text-[44px] lg:tw:!text-[48px] xl:tw:!text-[56px] 2xl:tw:!text-[64px] tw:!leading-none">
                   Transforme vídeos longos em{" "}
                   <span className="header-caption">
                     <span className="cd-headline rotate-1">
-                      <span className="cd-words-wrapper !w-[290px] !text-[36px] md:!w-[350px] md:!text-[44px] lg:!w-[380px] lg:!text-[48px] xl:!w-[450px] xl:!text-[56px] 2xl:!w-[510px] 2xl:!text-[64px]">
+                      <span className="cd-words-wrapper tw:!w-[290px] tw:!text-[36px] md:tw:!w-[350px] md:tw:!text-[44px] lg:tw:!w-[380px] lg:tw:!text-[48px] xl:tw:!w-[450px] xl:tw:!text-[56px] 2xl:tw:!w-[510px] 2xl:tw:!text-[64px]">
                         <b
                           className={
                             visibleIndex === 0
-                              ? "is-visible theme-gradient !normal-case tracking-[-0.08em] pr-[0.08em]"
-                              : "is-hidden theme-gradient !normal-case tracking-[-0.08em] pr-[0.08em]"
+                              ? "is-visible theme-gradient tw:!normal-case tw:tracking-[-0.08em] tw:pr-[0.08em]"
+                              : "is-hidden theme-gradient tw:!normal-case tw:tracking-[-0.08em] tw:pr-[0.08em]"
                           }
                         >
                           dezenas de cortes
@@ -79,8 +79,8 @@ const Home = () => {
                         <b
                           className={
                             visibleIndex === 1
-                              ? "is-visible theme-gradient !normal-case tracking-[-0.03em] pr-[0.03em]"
-                              : "is-hidden theme-gradient !normal-case tracking-[-0.03em] pr-[0.03em]"
+                              ? "is-visible theme-gradient tw:!normal-case tw:tracking-[-0.03em] tw:pr-[0.03em]"
+                              : "is-hidden theme-gradient tw:!normal-case tw:tracking-[-0.03em] tw:pr-[0.03em]"
                           }
                         >
                           presença digital
@@ -88,8 +88,8 @@ const Home = () => {
                         <b
                           className={
                             visibleIndex === 2
-                              ? "is-visible theme-gradient !normal-case tracking-[0.03em]"
-                              : "is-hidden theme-gradient !normal-case tracking-[0.03em]"
+                              ? "is-visible theme-gradient tw:!normal-case tw:tracking-[0.03em]"
+                              : "is-hidden theme-gradient tw:!normal-case tw:tracking-[0.03em]"
                           }
                         >
                           conteúdo viral
@@ -97,8 +97,8 @@ const Home = () => {
                         <b
                           className={
                             visibleIndex === 3
-                              ? "is-visible theme-gradient !normal-case tracking-[0.02em]"
-                              : "is-hidden theme-gradient !normal-case tracking-[0.02em]"
+                              ? "is-visible theme-gradient tw:!normal-case tw:tracking-[0.02em]"
+                              : "is-hidden theme-gradient tw:!normal-case tw:tracking-[0.02em]"
                           }
                         >
                           + engajamento
@@ -108,17 +108,17 @@ const Home = () => {
                   </span>{" "}
                   em minutos
                 </h1>
-                <p className="description !text-[16px] md:!text-[20px] opacity-80">
+                <p className="description tw:!text-[16px] md:tw:!text-[20px] tw:opacity-80">
                   O ViroClip entende seu conteúdo, gera cortes prontos para
                   viralizar e os publica em todas as suas redes sociais com
                   poucos cliques.
                 </p>
 
-                <div className="flex items-center gap-x-4 gap-y-3 w-auto flex-col md:flex-row">
-                  <div className="flex-grow bg-[#2D313E] rounded-full p-2 flex items-center shadow-lg max-w-[430px]">
+                <div className="tw:flex tw:items-center tw:gap-x-4 tw:gap-y-3 tw:w-auto tw:flex-col md:tw:flex-row">
+                  <div className="tw:flex-grow tw:bg-[#2D313E] tw:rounded-full tw:p-2 tw:flex tw:items-center tw:shadow-lg tw:max-w-[430px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-8 w-8 text-gray-400 mx-3 flex-none"
+                      className="tw:h-8 tw:w-8 tw:text-gray-400 tw:mx-3 tw:flex-none"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -135,24 +135,24 @@ const Home = () => {
                       placeholder="Cole um link aqui"
                       value={inputUrl}
                       onChange={(e) => setInputUrl(e.target.value)}
-                      className="w-full !pl-0 !rounded-none bg-transparent text-gray-700 placeholder-gray-500 text-base !border-none focus:ring-0 outline-none"
+                      className="tw:w-full tw:!pl-0 tw:!rounded-none tw:bg-transparent tw:text-gray-700 tw:placeholder-gray-500 tw:text-base tw:!border-none focus:tw:ring-0 tw:outline-none"
                     />
                     <Link
-                      className="btn-default flex-none !rounded-full"
+                      className="btn-default tw:flex-none tw:!rounded-full"
                       href="https://app.viroclip.com/signup"
                     >
                       Obter cortes grátis
                     </Link>
                   </div>
-                  <span className="text-gray-300 text-[14px]">ou</span>
+                  <span className="tw:text-gray-300 tw:text-[14px]">ou</span>
                   <Link
-                    className="rainbow-gradient-btn without-shape-circle flex-none"
+                    className="rainbow-gradient-btn without-shape-circle tw:flex-none"
                     href="https://app.viroclip.com/signup"
                   >
                     <span>Carregar arquivo</span>
                   </Link>
                 </div>
-                <div className="inner-shape hidden lg:!block">
+                <div className="inner-shape tw:hidden lg:tw:!block">
                   <Image
                     src={shapeOne}
                     width={100}
@@ -185,9 +185,9 @@ const Home = () => {
               </div>
             </div>
             <div className="col-lg-9 col-xl-9 justify-content-center">
-              <div className="slider-frame !bg-cover before:!bg-cover max-md:!p-0">
+              <div className="slider-frame tw:!bg-cover before:tw:!bg-cover max-md:tw:!p-0">
                 <video
-                  className="w-full"
+                  className="tw:w-full"
                   src="/hero-banner-video.webm"
                   autoPlay
                   muted
@@ -283,7 +283,7 @@ const Home = () => {
                   alt="collabration-image"
                 />
                 <div className="logo-section">
-                  <div className="center-logo !p-[10px] lg:!p-[27px]">
+                  <div className="center-logo tw:!p-[10px] lg:tw:!p-[27px]">
                     <SquareLogo />
                   </div>
                 </div>
@@ -314,7 +314,7 @@ const Home = () => {
                     Acelere seu crescimento
                   </span>
                 </h4>
-                <h2 className="title !font-semibold mb--40">
+                <h2 className="title tw:!font-semibold mb--40">
                   Escolha seu plano
                 </h2>
               </div>

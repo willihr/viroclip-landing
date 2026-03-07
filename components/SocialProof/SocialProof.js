@@ -56,11 +56,11 @@ const SocialProof = () => {
               data-sal-duration="700"
               data-sal-delay={100 + index * 100}
             >
-              <div className="text-center p-4">
-                <h2 className="title theme-gradient !text-[36px] md:!text-[48px] mb-2 !font-bold">
+              <div className="tw:text-center tw:p-4">
+                <h2 className="title theme-gradient tw:!text-[36px] md:tw:!text-[48px] tw:mb-2 tw:!font-bold">
                   {stat.value}
                 </h2>
-                <p className="description mb-0 opacity-80">{stat.label}</p>
+                <p className="description tw:mb-0 tw:opacity-80">{stat.label}</p>
               </div>
             </div>
           ))}
