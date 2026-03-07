@@ -30,6 +30,13 @@ import BrandTwo from "../Brands/Brand-Two";
 import CtaTwo from "../CallToActions/Cta-Two";
 import SquareLogo from "./SquareLogo";
 
+import HowItWorks from "./HowItWorks";
+import Features from "./Features";
+import TestimonialsSection from "./TestimonialsSection";
+import UseCases from "./UseCases";
+import FAQ from "./FAQ";
+import FinalCTA from "./FinalCTA";
+
 const Home = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
   const [inputUrl, setInputUrl] = useState("");
@@ -235,64 +242,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="rainbow-service-area rainbow-section-gap">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                className="section-title text-center pb--60"
-                data-sal="slide-up"
-                data-sal-duration="700"
-                data-sal-delay="100"
-              >
-                <h4 className="subtitle">
-                  <span className="theme-gradient">
-                    RAINBOW UNLOCKS THE POTENTIAL ai
-                  </span>
-                </h4>
-                <h2 className="title mb--0">
-                  Generative AI made for <br /> creators.
-                </h2>
-              </div>
-            </div>
-          </div>
-          <TabStyleOne />
-        </div>
-      </div> */}
-
-      {/* <div className="rainbow-service-area rainbow-section-gap rainbow-section-gapBottom-big">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                className="section-title text-left"
-                data-sal="slide-up"
-                data-sal-duration="400"
-                data-sal-delay="150"
-              >
-                <h4 className="subtitle">
-                  <span className="theme-gradient">Assisting individuals</span>
-                </h4>
-                <h2 className="title mb--60">
-                  Chat Smarter, Not <br /> Harder with
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ServiceStyleOne />
-      </div> */}
-
-      {/* <div className="rainbow-advance-tab-area aiwave-bg-gradient rainbow-section-gap-big">
-        <div className="container">
-          <div className="html-tabs" data-tabs="true">
-            <AdvanceTab />
-          </div>
-        </div>
-        <div className="bg-shape">
-          <Image src={bgShape} width={630} height={879} alt="Bg Shape" />
-        </div>
-      </div> */}
+      <HowItWorks />
 
       <div className="rainbow-collobration-area rainbow-section-gap-big">
         <div className="container">
@@ -347,6 +297,12 @@ const Home = () => {
           <CtaOne />
         </div>
       </div>
+
+      <Features />
+
+      <UseCases />
+
+      <TestimonialsSection />
 
       <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
         <div className="container">
@@ -412,83 +368,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="aiwave-service-area rainbow-section-gap">
-        <div className="container">
-          <div className="row row--15 service-wrapper">
-            <ServiceTwo />
-          </div>
-        </div>
-      </div> */}
+      <FAQ />
 
-      {/* <div className="rainbow-testimonial-area rainbow-section-gap">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                className="section-title text-left"
-                data-sal="slide-up"
-                data-sal-duration="400"
-                data-sal-delay="150"
-              >
-                <h4 className="subtitle">
-                  <span className="theme-gradient">Assisting individuals</span>
-                </h4>
-                <h2 className="title mb--60">The opinions of the community</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <Testimonial />
-      </div> */}
-
-      {/* <div className="rainbow-brand-area rainbow-section-gap">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div
-                className="section-title rating-title text-center sal-animate"
-                data-sal="slide-up"
-                data-sal-duration="700"
-                data-sal-delay="100"
-              >
-                <div className="rating">
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                  <a href="#rating">
-                    <i className="fa-sharp fa-solid fa-star"></i>
-                  </a>
-                </div>
-                <p className="subtitle mb--0">Based on 20,000+ reviews on</p>
-              </div>
-            </div>
-          </div>
-          <BrandTwo />
-          <div className="bg-shape-left">
-            <Image
-              src={bgShapeThree}
-              width={688}
-              height={1055}
-              alt="Bg shape"
-            />
-          </div>
-        </div>
-      </div> */}
-
-      {/* <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
-        <div className="container">
-          <CtaTwo />
-        </div>
-      </div> */}
+      <FinalCTA />
     </>
   );
 };
