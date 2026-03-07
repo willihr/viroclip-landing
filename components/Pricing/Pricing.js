@@ -5,11 +5,11 @@ import React from "react";
 import PricingData from "../../data/pricing.json";
 import Link from "next/link";
 
-const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
+const Pricing = ({ start, end, parentClass, isBadge, gap = "" }) => {
   return (
     <>
       <div
-        className="tab-content p-0 bg-transparent border-0 border bg-light"
+        className="tab-content p-0 bg-transparent border-0 border bg-gray-50"
         id="nav-tabContent"
       >
         {PricingData &&
@@ -21,7 +21,7 @@ const Pricing = ({ start, end, parentClass, isBadge, gap }) => {
               aria-labelledby={`${data.priceId}-tab`}
               key={index}
             >
-              <div className={`row row--15 ${gap}`}>
+              <div className={`flex flex-wrap -mx-[15px] ${gap}`}>
                 {data.priceBody
                   .slice(start, end)
                   .map((innerData, innerIndex) => (

@@ -54,7 +54,7 @@ const PlansBilling = () => {
                   </div>
 
                   <Pricing
-                    parentClass="col-lg-6 col-md-6 col-12"
+                    parentClass="lg:w-1/2 md:w-1/2 w-full px-[15px]"
                     start={1}
                     end={3}
                     isHeading={false}
