@@ -95,24 +95,29 @@ const Stats = () => {
               data-sal-duration="600"
               data-sal-delay={`${100 + index * 100}`}
             >
-              <div className="text-center p-4 rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] hover:bg-[rgba(255,255,255,0.06)] transition-all duration-300">
-                <div className="mb-3">
+              <div className="text-center tw-p-6 tw-rounded-xl tw-border tw-border-[rgba(255,255,255,0.08)] tw-bg-[rgba(255,255,255,0.03)] hover:tw-bg-[rgba(255,255,255,0.06)] tw-transition-all tw-duration-300">
+                <div className="tw-mb-3">
                   <i
-                    className={`${stat.icon} text-3xl`}
-                    style={{ background: "var(--color-primary)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}
+                    className={`${stat.icon} tw-text-3xl`}
+                    style={{
+                      background: "linear-gradient(90deg, #6366f1, #a855f7)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                    }}
                   ></i>
                 </div>
-                <h3 className="!text-4xl !font-bold !mb-1 theme-gradient">
+                <h3 className="tw-text-4xl tw-font-bold tw-mb-1 theme-gradient">
                   <AnimatedNumber
                     value={stat.value}
                     suffix={stat.suffix}
                     isFloat={!Number.isInteger(stat.value)}
                   />
                 </h3>
-                <p className="!font-semibold !text-base !mb-1 text-white">
+                <p className="tw-font-semibold tw-text-base tw-mb-1 tw-text-white">
                   {stat.label}
                 </p>
-                <p className="!text-sm !mb-0 text-gray-400">{stat.description}</p>
+                <p className="tw-text-sm tw-mb-0 tw-text-gray-400">{stat.description}</p>
               </div>
             </div>
           ))}

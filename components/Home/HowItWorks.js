@@ -56,7 +56,7 @@ const HowItWorks = () => {
                 <br />
                 em 3 passos
               </h2>
-              <p className="description b1 !max-w-[560px] mx-auto">
+              <p className="description b1 tw-max-w-[560px] tw-mx-auto">
                 Sem necessidade de edição manual. O ViroClip faz tudo
                 automaticamente para que você foque no que importa: criar.
               </p>
@@ -74,35 +74,43 @@ const HowItWorks = () => {
               data-sal-duration="600"
               data-sal-delay={`${150 + index * 100}`}
             >
-              <div className="h-full p-6 rounded-2xl border border-[rgba(255,255,255,0.1)] bg-gradient-to-b from-[rgba(255,255,255,0.04)] to-transparent hover:border-[rgba(99,102,241,0.4)] hover:from-[rgba(99,102,241,0.06)] transition-all duration-300 relative overflow-hidden flex flex-col">
+              <div className="tw-h-full tw-p-6 tw-rounded-2xl tw-border tw-border-[rgba(255,255,255,0.1)] tw-bg-gradient-to-b tw-from-[rgba(255,255,255,0.04)] tw-to-transparent hover:tw-border-[rgba(99,102,241,0.4)] hover:tw-from-[rgba(99,102,241,0.06)] tw-transition-all tw-duration-300 tw-relative tw-overflow-hidden tw-flex tw-flex-col">
                 {/* Step number watermark */}
-                <span className="absolute top-4 right-6 text-[80px] font-black text-white opacity-[0.04] leading-none select-none">
+                <span className="tw-absolute tw-top-4 tw-right-6 tw-text-[80px] tw-font-black tw-text-white tw-opacity-[0.04] tw-leading-none tw-select-none">
                   {step.number}
                 </span>
 
                 {/* Icon */}
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[rgba(99,102,241,0.2)] to-[rgba(168,85,247,0.2)] flex items-center justify-center mb-5 border border-[rgba(99,102,241,0.3)]">
-                  <i className={`${step.icon} text-xl theme-gradient`} style={{ background: "linear-gradient(90deg, #6366f1, #a855f7)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}></i>
+                <div className="tw-w-14 tw-h-14 tw-rounded-xl tw-bg-gradient-to-br tw-from-[rgba(99,102,241,0.2)] tw-to-[rgba(168,85,247,0.2)] tw-flex tw-items-center tw-justify-center tw-mb-5 tw-border tw-border-[rgba(99,102,241,0.3)]">
+                  <i
+                    className={`${step.icon} tw-text-xl`}
+                    style={{
+                      background: "linear-gradient(90deg, #6366f1, #a855f7)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                    }}
+                  ></i>
                 </div>
 
                 {/* Step badge */}
-                <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-[rgba(99,102,241,0.15)] text-[#a78bfa] mb-3 w-fit">
+                <span className="tw-inline-block tw-text-xs tw-font-semibold tw-px-3 tw-py-1 tw-rounded-full tw-bg-[rgba(99,102,241,0.15)] tw-text-[#a78bfa] tw-mb-3 tw-w-fit">
                   Passo {step.number}
                 </span>
 
-                <h4 className="!text-xl !font-bold !mb-3 text-white">
+                <h4 className="tw-text-xl tw-font-bold tw-mb-3 tw-text-white">
                   {step.title}
                 </h4>
-                <p className="!text-sm !mb-4 text-gray-400 !leading-relaxed flex-grow">
+                <p className="tw-text-sm tw-mb-4 tw-text-gray-400 tw-leading-relaxed tw-flex-grow">
                   {step.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2">
+                <div className="tw-flex tw-flex-wrap tw-gap-2">
                   {step.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="text-xs px-3 py-1 rounded-full bg-[rgba(255,255,255,0.06)] text-gray-300 border border-[rgba(255,255,255,0.08)]"
+                      className="tw-text-xs tw-px-3 tw-py-1 tw-rounded-full tw-bg-[rgba(255,255,255,0.06)] tw-text-gray-300 tw-border tw-border-[rgba(255,255,255,0.08)]"
                     >
                       {tag}
                     </span>
@@ -111,8 +119,8 @@ const HowItWorks = () => {
 
                 {/* Connector arrow (not on last) */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center">
-                    <i className="fa-sharp fa-solid fa-arrow-right text-[rgba(99,102,241,0.6)] text-lg"></i>
+                  <div className="tw-hidden lg:tw-flex tw-absolute tw-top-1/2 tw--right-5 tw--translate-y-1/2 tw-z-10 tw-w-10 tw-h-10 tw-items-center tw-justify-center">
+                    <i className="fa-sharp fa-solid fa-arrow-right tw-text-[rgba(99,102,241,0.6)] tw-text-lg"></i>
                   </div>
                 )}
               </div>
@@ -134,7 +142,7 @@ const HowItWorks = () => {
             Começar grátis agora{" "}
             <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
           </Link>
-          <p className="!text-sm !mt-3 text-gray-400">
+          <p className="tw-text-sm tw-mt-3 tw-text-gray-400">
             Sem necessidade de cartão de crédito
           </p>
         </div>

@@ -73,7 +73,7 @@ const Features = () => {
                 <br />
                 dominar o conteúdo curto
               </h2>
-              <p className="description b1 !max-w-[560px] mx-auto">
+              <p className="description b1 tw-max-w-[560px] tw-mx-auto">
                 Ferramentas profissionais de edição, publicação e análise — tudo
                 em um lugar, funcionando no piloto automático.
               </p>
@@ -92,26 +92,26 @@ const Features = () => {
               data-sal-delay={`${100 + (index % 3) * 100}`}
             >
               <div
-                className={`h-full p-6 rounded-2xl border transition-all duration-300 hover:-translate-y-1 group ${
+                className={`tw-h-full tw-p-6 tw-rounded-2xl tw-border tw-transition-all tw-duration-300 hover:tw--translate-y-1 tw-group ${
                   feature.highlight
-                    ? "border-[rgba(99,102,241,0.5)] bg-gradient-to-br from-[rgba(99,102,241,0.12)] to-[rgba(168,85,247,0.08)]"
-                    : "border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)] hover:border-[rgba(99,102,241,0.3)] hover:bg-[rgba(99,102,241,0.04)]"
+                    ? "tw-border-[rgba(99,102,241,0.5)] tw-bg-gradient-to-br tw-from-[rgba(99,102,241,0.12)] tw-to-[rgba(168,85,247,0.08)]"
+                    : "tw-border-[rgba(255,255,255,0.08)] tw-bg-[rgba(255,255,255,0.02)] hover:tw-border-[rgba(99,102,241,0.3)] hover:tw-bg-[rgba(99,102,241,0.04)]"
                 }`}
               >
                 {feature.highlight && (
-                  <span className="inline-block text-xs font-bold px-3 py-1 rounded-full bg-[rgba(99,102,241,0.25)] text-[#a78bfa] mb-4 uppercase tracking-wider">
+                  <span className="tw-inline-block tw-text-xs tw-font-bold tw-px-3 tw-py-1 tw-rounded-full tw-bg-[rgba(99,102,241,0.25)] tw-text-[#a78bfa] tw-mb-4 tw-uppercase tw-tracking-wider">
                     ⚡ Destaque
                   </span>
                 )}
                 <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 transition-all duration-300 ${
+                  className={`tw-w-12 tw-h-12 tw-rounded-xl tw-flex tw-items-center tw-justify-center tw-mb-4 tw-transition-all tw-duration-300 ${
                     feature.highlight
-                      ? "bg-gradient-to-br from-[rgba(99,102,241,0.3)] to-[rgba(168,85,247,0.3)] border border-[rgba(99,102,241,0.4)]"
-                      : "bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.1)] group-hover:bg-[rgba(99,102,241,0.15)] group-hover:border-[rgba(99,102,241,0.3)]"
+                      ? "tw-bg-gradient-to-br tw-from-[rgba(99,102,241,0.3)] tw-to-[rgba(168,85,247,0.3)] tw-border tw-border-[rgba(99,102,241,0.4)]"
+                      : "tw-bg-[rgba(255,255,255,0.06)] tw-border tw-border-[rgba(255,255,255,0.1)] group-hover:tw-bg-[rgba(99,102,241,0.15)] group-hover:tw-border-[rgba(99,102,241,0.3)]"
                   }`}
                 >
                   <i
-                    className={`${feature.icon} text-lg`}
+                    className={`${feature.icon} tw-text-lg`}
                     style={{
                       background: "linear-gradient(90deg, #6366f1, #a855f7)",
                       WebkitBackgroundClip: "text",
@@ -120,10 +120,10 @@ const Features = () => {
                     }}
                   ></i>
                 </div>
-                <h5 className="!text-lg !font-bold !mb-2 text-white group-hover:text-[#a78bfa] transition-colors duration-300">
+                <h5 className="tw-text-lg tw-font-bold tw-mb-2 tw-text-white group-hover:tw-text-[#a78bfa] tw-transition-colors tw-duration-300">
                   {feature.title}
                 </h5>
-                <p className="!text-sm !mb-0 text-gray-400 !leading-relaxed">
+                <p className="tw-text-sm tw-mb-0 tw-text-gray-400 tw-leading-relaxed">
                   {feature.description}
                 </p>
               </div>

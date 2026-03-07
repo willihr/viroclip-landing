@@ -49,49 +49,47 @@ const faqData = [
   },
 ];
 
-const FaqItem = ({ item, index }) => {
+const FaqItem = ({ item }) => {
   const [isOpen, setIsOpen] = useState(item.isOpen);
 
   return (
-    <div className="mb-3">
+    <div className="tw-mb-3">
       <div
-        className={`rounded-xl border transition-all duration-300 overflow-hidden ${
+        className={`tw-rounded-xl tw-border tw-transition-all tw-duration-300 tw-overflow-hidden ${
           isOpen
-            ? "border-[rgba(99,102,241,0.4)] bg-[rgba(99,102,241,0.06)]"
-            : "border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)] hover:border-[rgba(255,255,255,0.15)]"
+            ? "tw-border-[rgba(99,102,241,0.4)] tw-bg-[rgba(99,102,241,0.06)]"
+            : "tw-border-[rgba(255,255,255,0.08)] tw-bg-[rgba(255,255,255,0.02)] hover:tw-border-[rgba(255,255,255,0.15)]"
         }`}
       >
         <button
-          className="w-full flex items-center justify-between p-5 text-left focus:outline-none group"
+          className="tw-w-full tw-flex tw-items-center tw-justify-between tw-p-5 tw-text-left focus:tw-outline-none tw-group tw-bg-transparent tw-border-0"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span
-            className={`font-semibold text-base pr-4 transition-colors duration-300 ${
-              isOpen ? "text-white" : "text-gray-300 group-hover:text-white"
+            className={`tw-font-semibold tw-text-base tw-pr-4 tw-transition-colors tw-duration-300 ${
+              isOpen ? "tw-text-white" : "tw-text-gray-300 group-hover:tw-text-white"
             }`}
           >
             {item.question}
           </span>
           <span
-            className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+            className={`tw-flex-shrink-0 tw-w-8 tw-h-8 tw-rounded-full tw-flex tw-items-center tw-justify-center tw-transition-all tw-duration-300 ${
               isOpen
-                ? "bg-[rgba(99,102,241,0.3)] text-[#a78bfa]"
-                : "bg-[rgba(255,255,255,0.06)] text-gray-400 group-hover:bg-[rgba(255,255,255,0.1)]"
+                ? "tw-bg-[rgba(99,102,241,0.3)] tw-text-[#a78bfa]"
+                : "tw-bg-[rgba(255,255,255,0.06)] tw-text-gray-400 group-hover:tw-bg-[rgba(255,255,255,0.1)]"
             }`}
           >
             <i
-              className={`fa-sharp fa-solid ${
-                isOpen ? "fa-minus" : "fa-plus"
-              } text-xs`}
+              className={`fa-sharp fa-solid ${isOpen ? "fa-minus" : "fa-plus"} tw-text-xs`}
             ></i>
           </span>
         </button>
         <div
-          className={`transition-all duration-300 overflow-hidden ${
-            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          className={`tw-transition-all tw-duration-300 tw-overflow-hidden ${
+            isOpen ? "tw-max-h-96 tw-opacity-100" : "tw-max-h-0 tw-opacity-0"
           }`}
         >
-          <p className="px-5 pb-5 !text-sm !mb-0 text-gray-400 !leading-relaxed">
+          <p className="tw-px-5 tw-pb-5 tw-text-sm tw-mb-0 tw-text-gray-400 tw-leading-relaxed">
             {item.answer}
           </p>
         </div>
@@ -125,9 +123,9 @@ const Faq = () => {
                 <span className="theme-gradient">Tire suas dúvidas</span>
               </h4>
               <h2 className="title mb--20">Perguntas frequentes</h2>
-              <p className="description b1 !max-w-[500px] mx-auto">
+              <p className="description b1 tw-max-w-[500px] tw-mx-auto">
                 Não encontrou o que procurava?{" "}
-                <Link href="/contact" className="text-[#a78bfa] hover:underline">
+                <Link href="/contact" className="tw-text-[#a78bfa] hover:tw-underline">
                   Fale com nosso suporte
                 </Link>{" "}
                 — respondemos em minutos.
@@ -145,7 +143,7 @@ const Faq = () => {
             data-sal-delay="150"
           >
             {leftColumn.map((item, index) => (
-              <FaqItem key={index} item={item} index={index} />
+              <FaqItem key={index} item={item} />
             ))}
           </div>
           <div
@@ -155,7 +153,7 @@ const Faq = () => {
             data-sal-delay="250"
           >
             {rightColumn.map((item, index) => (
-              <FaqItem key={index} item={item} index={index + half} />
+              <FaqItem key={index} item={item} />
             ))}
           </div>
         </div>
