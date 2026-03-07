@@ -53,9 +53,9 @@ const Home = () => {
         data-black-overlay="1"
       >
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-12">
-              <div className="inner text-center mt--140">
+          <div className="flex flex-wrap justify-center">
+            <div className="w-full">
+              <div className="inner text-center mt-[140px]">
                 <h1 className="title display-one !text-[36px] md:!text-[44px] lg:!text-[48px] xl:!text-[56px] 2xl:!text-[64px] !leading-none">
                   Transforme vídeos longos em{" "}
                   <span className="header-caption">
@@ -178,7 +178,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-9 col-xl-9 justify-content-center">
+            <div className="w-full lg:w-9/12 xl:w-9/12 flex justify-center">
               <div className="slider-frame !bg-cover before:!bg-cover max-md:!p-0">
                 <video
                   className="w-full"
@@ -212,15 +212,15 @@ const Home = () => {
 
       <div className="rainbow-brand-area rainbow-section-gap">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
+          <div className="flex flex-wrap">
+            <div className="w-full">
               <div
                 className="section-title rating-title text-center sal-animate"
                 data-sal="slide-up"
                 data-sal-duration="700"
                 data-sal-delay="100"
               >
-                <p className="b1 mb--0 small-title">
+                <p className="b1 mb-0 small-title">
                   A ferramenta que acelera o crescimento de milhares de
                   criadores
                 </p>
@@ -296,8 +296,8 @@ const Home = () => {
 
       <div className="rainbow-collobration-area rainbow-section-gap-big">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
+          <div className="flex flex-wrap">
+            <div className="w-full">
               <div
                 className="section-title text-center"
                 data-sal="slide-up"
@@ -309,7 +309,7 @@ const Home = () => {
                     Sua Máquina de Conteúdo Viral
                   </span>
                 </h4>
-                <h2 className="title mb--20">
+                <h2 className="title mb-[20px]">
                   Um vídeo rende um mês inteiro de cortes virais
                 </h2>
                 <Link
@@ -317,13 +317,13 @@ const Home = () => {
                   href="https://app.viroclip.com/signup"
                 >
                   Teste Grátis Agora{" "}
-                  <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
+                  <i className="fa-sharp fa-light fa-arrow-right ml-[5px]"></i>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12 mt--60">
+          <div className="flex flex-wrap">
+            <div className="w-full mt-[60px]">
               <div className="collabration-image-section">
                 <Image
                   src={SplitImg}
@@ -350,8 +350,8 @@ const Home = () => {
 
       <div className="aiwave-pricing-area wrapper rainbow-section-gap-big">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
+          <div className="flex flex-wrap">
+            <div className="w-full">
               <div
                 className="section-title text-center"
                 data-sal="slide-up"
@@ -363,7 +363,7 @@ const Home = () => {
                     Acelere seu crescimento
                   </span>
                 </h4>
-                <h2 className="title !font-semibold mb--40">
+                <h2 className="title !font-semibold mb-[40px]">
                   Escolha seu plano
                 </h2>
               </div>
@@ -403,7 +403,7 @@ const Home = () => {
           </div>
 
           <Pricing
-            parentClass="col-xl-4 col-lg-6 col-md-6 col-12 mt--40"
+            parentClass="col-xl-4 col-lg-6 col-md-6 col-12 mt-[40px]"
             start={0}
             end={3}
             isBadge={true}
