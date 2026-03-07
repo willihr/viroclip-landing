@@ -20,6 +20,7 @@ import HowItWorks from "./HowItWorks";
 import Features from "./Features";
 import Testimonials from "./Testimonials";
 import FAQ from "./FAQ";
+import FinalCTA from "./FinalCTA";
 
 const Home = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
@@ -351,6 +352,8 @@ const Home = () => {
       </div>
 
       <FAQ />
+
+      <FinalCTA />
     </>
   );
 };
