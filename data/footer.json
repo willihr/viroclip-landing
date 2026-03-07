@@ -3,11 +3,19 @@
     {
       "links": [
         {
-          "title": "Qucik Links",
+          "title": "Links Rápidos",
           "innerItem": [
             {
-              "link": "#",
-              "text": "Pages"
+              "link": "/",
+              "text": "Início"
+            },
+            {
+              "link": "https://app.viroclip.com/signup",
+              "text": "Começar Grátis"
+            },
+            {
+              "link": "/#pricing",
+              "text": "Planos e Preços"
             },
             {
               "link": "/blog",
@@ -15,51 +23,43 @@
             },
             {
               "link": "/contact",
-              "text": "Contact"
-            },
-            {
-              "link": "/utilize",
-              "text": "How to use"
-            },
-            {
-              "link": "/roadmap",
-              "text": "Roadmap"
+              "text": "Contato"
             }
           ]
         }
       ],
       "services": [
         {
-          "title": "Services",
+          "title": "Recursos",
           "innerItem": [
             {
-              "link": "/image-generator",
-              "text": "Image Generator"
+              "link": "https://app.viroclip.com/signup",
+              "text": "Cortes com IA"
             },
             {
-              "link": "/vedio-generator",
-              "text": "Video Generator"
+              "link": "https://app.viroclip.com/signup",
+              "text": "Legendas Animadas"
             },
             {
-              "link": "/text-generator",
-              "text": "Text Generator"
+              "link": "https://app.viroclip.com/signup",
+              "text": "Editor de Vídeo"
             },
             {
-              "link": "/code-generator",
-              "text": "Code Generator"
+              "link": "https://app.viroclip.com/signup",
+              "text": "Publicação Multi-plataforma"
             },
             {
-              "link": "#",
-              "text": "Education Feedback"
+              "link": "https://app.viroclip.com/signup",
+              "text": "Agendamento Automático"
             }
           ]
         }
       ],
       "contact": [
         {
-          "location": "8819 Ohio St. South Gate, North America, USA",
-          "mail": "example@domain.com",
-          "number": "1 386-688-3295"
+          "location": "Brasil",
+          "mail": "contato@viroclip.com",
+          "number": "Suporte via WhatsApp"
         }
       ]
     }

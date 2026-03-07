@@ -29,6 +29,9 @@ import Testimonial from "../Testimonials/Testimonial";
 import BrandTwo from "../Brands/Brand-Two";
 import CtaTwo from "../CallToActions/Cta-Two";
 import SquareLogo from "./SquareLogo";
+import HowItWorks from "./HowItWorks";
+import Features from "./Features";
+import LandingFaq from "./LandingFaq";
 
 const Home = () => {
   const [visibleIndex, setVisibleIndex] = useState(0);
@@ -222,18 +225,46 @@ const Home = () => {
               >
                 <p className="b1 mb--0 small-title">
                   A ferramenta que acelera o crescimento de milhares de
-                  criadores
+                  criadores de conteúdo no Brasil
                 </p>
               </div>
             </div>
           </div>
-          {/* <div className="row">
-            <div className="col-lg-12 mt--10">
-              <BrandList />
+          {/* Plataformas suportadas */}
+          <div className="row mt--20">
+            <div className="col-lg-12">
+              <div
+                className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 mt--20"
+                data-sal="slide-up"
+                data-sal-duration="700"
+                data-sal-delay="200"
+              >
+                <span className="flex items-center gap-2 !text-[15px] !opacity-70">
+                  <i className="fa-brands fa-tiktok !text-[20px]"></i> TikTok
+                </span>
+                <span className="flex items-center gap-2 !text-[15px] !opacity-70">
+                  <i className="fa-brands fa-instagram !text-[20px]"></i> Instagram Reels
+                </span>
+                <span className="flex items-center gap-2 !text-[15px] !opacity-70">
+                  <i className="fa-brands fa-youtube !text-[20px]"></i> YouTube Shorts
+                </span>
+                <span className="flex items-center gap-2 !text-[15px] !opacity-70">
+                  <i className="fa-brands fa-twitter !text-[20px]"></i> Twitter / X
+                </span>
+                <span className="flex items-center gap-2 !text-[15px] !opacity-70">
+                  <i className="fa-brands fa-linkedin !text-[20px]"></i> LinkedIn
+                </span>
+              </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
+
+      {/* HOW IT WORKS */}
+      <HowItWorks />
+
+      {/* FEATURES GRID */}
+      <Features />
 
       {/* <div className="rainbow-service-area rainbow-section-gap">
         <div className="container">
@@ -420,26 +451,28 @@ const Home = () => {
         </div>
       </div> */}
 
-      {/* <div className="rainbow-testimonial-area rainbow-section-gap">
+      <div className="rainbow-testimonial-area rainbow-section-gap">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div
-                className="section-title text-left"
+                className="section-title text-center"
                 data-sal="slide-up"
                 data-sal-duration="400"
                 data-sal-delay="150"
               >
                 <h4 className="subtitle">
-                  <span className="theme-gradient">Assisting individuals</span>
+                  <span className="theme-gradient">Quem já usa, aprova</span>
                 </h4>
-                <h2 className="title mb--60">The opinions of the community</h2>
+                <h2 className="title mb--60">
+                  O que nossos criadores dizem
+                </h2>
               </div>
             </div>
           </div>
         </div>
         <Testimonial />
-      </div> */}
+      </div>
 
       {/* <div className="rainbow-brand-area rainbow-section-gap">
         <div className="container">
@@ -484,11 +517,51 @@ const Home = () => {
         </div>
       </div> */}
 
-      {/* <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
+      {/* FAQ */}
+      <LandingFaq />
+
+      {/* FINAL CTA */}
+      <div className="rainbow-cta-area rainbow-section-gap rainbow-section-gapBottom-big">
         <div className="container">
-          <CtaTwo />
+          <div
+            className="row align-items-center text-center"
+            data-sal="slide-up"
+            data-sal-duration="400"
+            data-sal-delay="100"
+          >
+            <div className="col-lg-12">
+              <div className="inner">
+                <h2 className="title !font-bold mb--20">
+                  Pronto para multiplicar seu conteúdo?
+                </h2>
+                <p className="b1 !opacity-80 !max-w-[560px] !mx-auto mb--40">
+                  Comece grátis agora. Sem cartão de crédito. Transforme seu
+                  primeiro vídeo em minutos e veja o poder do ViroClip.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Link
+                    className="btn-default btn-large"
+                    href="https://app.viroclip.com/signup"
+                  >
+                    Começar Grátis{" "}
+                    <i className="fa-sharp fa-light fa-arrow-right ml--5"></i>
+                  </Link>
+                  <Link
+                    className="btn-default btn-border btn-large"
+                    href="https://app.viroclip.com/signup"
+                  >
+                    Ver planos e preços
+                  </Link>
+                </div>
+                <p className="!text-[13px] !opacity-50 mt--20">
+                  ✓ Sem cartão de crédito &nbsp;·&nbsp; ✓ 30 créditos grátis
+                  por mês &nbsp;·&nbsp; ✓ Cancele quando quiser
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

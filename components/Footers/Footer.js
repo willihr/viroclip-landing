@@ -28,13 +28,13 @@ const Footer = () => {
                     </Link>
                   </div>
                   <p className="b1 desc-text">
-                    It has long been known that a reader's <br /> attention will
-                    be diverted from{" "}
+                    Transforme vídeos longos em cortes virais para TikTok,
+                    Reels e Shorts com o poder da IA.
                   </p>
-                  <h6 className="subtitle">Join a Newsletter</h6>
+                  <h6 className="subtitle">Fique por dentro</h6>
                   <form className="newsletter-form" action="#">
                     <div className="form-group">
-                      <input type="email" placeholder="Enter Your Email Here" />
+                      <input type="email" placeholder="Seu e-mail aqui" />
                       <button
                         className="btn-default bg-solid-primary"
                         type="submit"

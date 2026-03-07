@@ -7,24 +7,24 @@ const Copyright = () => {
       <div className="copyright-area copyright-style-one">
         <div className="container">
           <div className="row align-items-center">
-            {/* <div className="col-lg-6 col-md-8 col-sm-12 col-12">
+            <div className="col-lg-6 col-md-8 col-sm-12 col-12">
               <div className="copyright-left">
                 <ul className="ft-menu link-hover">
                   <li>
-                    <Link href="/privacy-policy">Privacy Policy</Link>
+                    <Link href="/privacy-policy">Política de Privacidade</Link>
                   </li>
                   <li>
-                    <Link href="/terms-policy">Terms And Condition</Link>
+                    <Link href="/terms-policy">Termos de Uso</Link>
                   </li>
                   <li>
-                    <Link href="/contact">Contact Us</Link>
+                    <Link href="/contact">Contato</Link>
                   </li>
                 </ul>
               </div>
-            </div> */}
-            <div className="col-12">
+            </div>
+            <div className="col-lg-6 col-md-4 col-sm-12 col-12">
               <div className="copyright-right text-center text-lg-end">
-                <p className="copyright-text text-center">
+                <p className="copyright-text">
                   ViroClip © {new Date().getFullYear()} - Willian Henrique
                   Ribeiro - CNPJ: 52.719.316/0001-31
                 </p>
